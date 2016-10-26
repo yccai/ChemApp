@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+  <title>User Guide | ChemWriter</title>
+  <meta name="twitter:title" content="User Guide">
+
+
+
+  <meta name="description" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@metamolecular">
+  <meta name="twitter:description" content="">
+
+
+
+
+<link rel="stylesheet" href="/css/resets.css">
+<link rel="stylesheet" href="/css/global.css">
+
+
+  <link rel="stylesheet" href="/css/page.css">
+
+
+
+  
+    <link rel="stylesheet" href="/css/user-guide.css">
+  
+
+
+
+  
+
+
+
+  <script src="http://chemwriter.com/sdk/chemwriter.js" data-chemwriter-license="http://chemwriter.com/licenses/396f597e46fbdbd39e34108b010c6efcb2ef2ed2.txt"></script>
+  <link rel="stylesheet" href="http://chemwriter.com/sdk/chemwriter.css">
+
+  </head>
+  <body>
+    <div class="page">
+      <aside class="header">
+  <h2 hidden>Site Identification</h2>
+  <div class="horizontal-margin">
+    <nav class="site">
+      <h2 class="site-id"><a href="/"><img src="/images/site-id.svg" alt="ChemWriter Site Logo"></a></h2>
+      <ul class="links">
+        <li><a href="/developer-guide/">Quickstart</a></li>
+        <li><a href="/examples/">Examples</a></li>
+        <li><a href="/user-guide/">User Guide</a></li>
+        <li><a href="/support/">Support</a></li>
+        <li><a href="/releases">Releases</a></li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+      <div class="body horizontal-margin">
+        <div class="content">
+          
+
+
+
+  <h1>User Guide</h1>
+
+
+
+  
+    <aside class="sidebar">
+  <div class="user-guide">
+    <h2>Keyboard: Hover Atom &amp; Press</h2>
+    <dl class="keyboard">
+      <dt>a</dt>
+      <dd>Aromatic Ring</dd>
+      <dt>b</dt>
+      <dd>Boron</dd>
+      <dt>f</dt>
+      <dd>Fluorine</dd>
+      <dt>h</dt>
+      <dd>Hydrogen</dd>
+      <dt>i</dt>
+      <dd>Iodine</dd>
+      <dt>l</dt>
+      <dd>Chlorine</dd>
+      <dt>o</dt>
+      <dd>Oxygen</dd>
+      <dt>p</dt>
+      <dd>Phosphorous</dd>
+      <dt>r</dt>
+      <dd>Bromine</dd>
+      <dt>s</dt>
+      <dd>Sulfur</dd>
+      <dt>t</dt>
+      <dd>Tin</dd>
+      <dt>z</dt>
+      <dd>Silicon</dd>
+      <dt>&#9003;</dt>
+      <dd>Delete</dd>
+    </dl>
+    <h2>Mouse</h2>
+    <dl class="mouse">
+      <dt>Zoom</dt>
+      <dd>Mouse Wheel</dd>
+      <dt>Pan</dt>
+      <dd>Shift-move</dd>
+      <dt>Free Rotate</dt>
+      <dd>Shift-drag</dd>
+    </dl>
+  </div>
+</aside>
+    <div class="main">
+      <div class="editor">
+  <div id="editor"
+       data-chemwriter-width="650"
+       data-chemwriter-height="420"
+       data-chemwriter-ui="editor"
+       data-chemwriter-src="/data/structure-8.mol">
+  </div>
+</div>
+
+<ul class="buttons">
+  <li class="button">
+    <div class="icon">a</div>
+    <div class="description">
+      <h4>Select</h4>
+      <p>
+      Selects a group of atoms with a freeform lasso.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">b</div>
+    <div class="description">
+      <h4>Delete</h4>
+      <p>
+        Deletes a group of atoms with a freeform lasso.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">c</div>
+    <div class="description">
+      <h4>Bond</h4>
+      <p>
+        Draws single bonds. Increases bond order when used on existing bonds.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">d</div>
+    <div class="description">
+      <h4>Wedge Bond</h4>
+      <p>
+        Draws a wedge bond. Flips orientation of existing wedge bonds.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">e</div>
+    <div class="description">
+      <h4>Hash Bond</h4>
+      <p>
+        Draws a hash bond. Flips orientation of existing hash bonds.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">f</div>
+    <div class="description">
+      <h4>Squiggle Bond</h4>
+      <p>
+        Draws a squiggle bond, representing unknown stereochemistry. Flips orientation of existing hash bonds.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">g</div>
+    <div class="description">
+      <h4>Crossed Bond</h4>
+      <p>
+        Changes any pressed bond to a stereochemically ambiguous double bond.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">n</div>
+    <div class="description">
+      <h4>Increase Charge</h4>
+      <p>
+        Increases charge on pressed atom.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">o</div>
+    <div class="description">
+      <h4>Decrease Charge</h4>
+      <p>
+        Decreases charge on pressed atom.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">p</div>
+    <div class="description">
+      <h4>Next Isotope</h4>
+      <p>
+        Increases isotope on pressed atom. Resets to natural abundance after highest available isotope.
+        </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">q</div>
+    <div class="description">
+      <h4>Undo</h4>
+      <p>
+        Reverts the last edit.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">r</div>
+    <div class="description">
+      <h4>Redo</h4>
+      <p>
+        Re-applies the last undone edit.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">s</div>
+    <div class="description">
+      <h4>New Document</h4>
+      <p>
+        Clears canvas area. Can be undone.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">t</div>
+    <div class="description">
+      <h4>Inspect Document</h4>
+      <p>
+        Copy, paste &amp; edit Document data.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">u</div>
+    <div class="description">
+      <h4>Reset View</h4>
+      <p>
+        Center and auto-scale view.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">v</div>
+    <div class="description">
+      <h4>About ChemWriter</h4>
+      <p>
+        Version, release, and copyright.
+      </p>
+    </div>
+  </li>
+  <li class="button">
+    <div class="icon">w</div>
+    <div class="description">
+      <h4>Full Screen</h4>
+      <p>
+        Enlarge to fit browser window.
+      </p>
+    </div>
+  </li>
+</ul>
+
+
+    </div>
+  
+
+
+
+        </div>
+      </div>
+      <footer class="page-footer">
+  <nav>
+    <ul>
+      <li><a href="/policies/terms-of-service/">Terms of Service</a></li>
+      <li>|</li>
+      <li><a href="/policies/privacy/">Privacy</a></li>
+    </ul>
+  </nav>
+  <a href="http://metamolecular.com"><img src="/images/logo-footer.svg" alt="Metamolecular Footer Logo"></a>
+  <p class="copyright">
+    &copy;&nbsp;2016 <a href="/">Metamolecular, LLC</a>
+  </p>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23800755-3', 'chemwriter.com');
+  ga('send', 'pageview');
+
+</script>
+    </div>
+  </body>
+</html>
